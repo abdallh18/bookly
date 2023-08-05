@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
 import 'best_seller_list_view.dart';

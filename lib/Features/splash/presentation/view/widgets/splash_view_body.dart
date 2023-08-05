@@ -1,4 +1,3 @@
-
 import 'package:appnoteadjkasd/Features/splash/presentation/view/widgets/slidingtext.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
