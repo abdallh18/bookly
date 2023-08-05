@@ -2,6 +2,10 @@ async
 2.18
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.11.0/
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.11.0/lib/
+bloc
+2.12
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/bloc-8.1.2/
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/bloc-8.1.2/lib/
 boolean_selector
 2.17
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/boolean_selector-2.1.1/
@@ -30,6 +34,10 @@ dartz
 2.12
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/dartz-0.10.1/
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/dartz-0.10.1/lib/
+dio
+2.15
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/dio-5.3.0/
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/dio-5.3.0/lib/
 equatable
 2.12
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/equatable-2.0.5/
@@ -42,6 +50,10 @@ ffi
 2.17
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.0.2/
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.0.2/lib/
+flutter_bloc
+2.12
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_bloc-8.1.3/
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_bloc-8.1.3/lib/
 flutter_lints
 2.18
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.2/
@@ -50,6 +62,10 @@ font_awesome_flutter
 3.0
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/font_awesome_flutter-10.5.0/
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/font_awesome_flutter-10.5.0/lib/
+get_it
+2.12
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/get_it-7.6.0/
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/get_it-7.6.0/lib/
 go_router
 2.18
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/go_router-9.1.0/
@@ -90,6 +106,10 @@ meta
 2.12
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.9.1/
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.9.1/lib/
+nested
+2.12
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0/
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0/lib/
 path
 2.12
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.8.3/
@@ -126,6 +146,10 @@ plugin_platform_interface
 2.17
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.4/
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.4/lib/
+provider
+2.12
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.0.5/
+file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.0.5/lib/
 source_span
 2.14
 file:///C:/Users/Abdullah/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.9.1/
