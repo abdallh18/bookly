@@ -16,7 +16,9 @@ class SimplerBookListView extends StatelessWidget {
             padding: EdgeInsets.symmetric(
               horizontal: 5,
             ),
-            child: CustomBookImage(),
+            child: CustomBookImage(
+              imageUrl: "https://upload.wikimedia.org/wikipedia/en/f/fb/Le_Livre_d%27image.png",
+            ),
           );
         },
       ),
