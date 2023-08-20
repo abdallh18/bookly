@@ -9,32 +9,32 @@ abstract class Failure {
 class ServerFailure extends Failure {
   ServerFailure(super.errMessage);
 
-  // factory ServerFailure.fromDioError(DioError dioError) {
-  //   switch (dioError.type) {
-  //     case DioErrorType.connectTimeout:
-  //       return ServerFailure('Connection timeout with ApiServer');
+  factory ServerFailure.fromDioError(DioError dioError) {
+    switch (dioError.type) {
+      case DioErrorType.connectTimeout:
+        return ServerFailure('Connection timeout with ApiServer');
 
-  //     case DioErrorType.sendTimeout:
-  //       return ServerFailure('Send timeout with ApiServer');
+      case DioErrorType.sendTimeout:
+        return ServerFailure('Send timeout with ApiServer');
 
-  //     case DioErrorType.receiveTimeout:
-  //       return ServerFailure('Receive timeout with ApiServer');
+      case DioErrorType.receiveTimeout:
+        return ServerFailure('Receive timeout with ApiServer');
 
-  //     case DioErrorType.response:
-  //       return ServerFailure.fromResponse(
-  //           dioError.response!.statusCode, dioError.response!.data);
-  //     case DioErrorType.cancel:
-  //       return ServerFailure('Request to ApiServer was canceld');
+      case DioErrorType.response:
+        return ServerFailure.fromResponse(
+            dioError.response!.statusCode, dioError.response!.data);
+      case DioErrorType.cancel:
+        return ServerFailure('Request to ApiServer was canceld');
 
-  //     case DioErrorType.other:
-  //       if (dioError.message.contains('SocketException')) {
-  //         return ServerFailure('No Internet Connection');
-  //       }
-  //       return ServerFailure('Unexpected Error, Please try again!');
-  //     default:
-  //       return ServerFailure('Opps There was an Error, Please try again');
-  //   }
-  // }
+      case DioErrorType.other:
+        if (dioError.message.contains('SocketException')) {
+          return ServerFailure('No Internet Connection');
+        }
+        return ServerFailure('Unexpected Error, Please try again!');
+      default:
+        return ServerFailure('Opps There was an Error, Please try again');
+    }
+  }
 
   factory ServerFailure.fromResponse(int? statusCode, dynamic response) {
     if (statusCode == 400 || statusCode == 401 || statusCode == 403) {
