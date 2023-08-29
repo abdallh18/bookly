@@ -1,13 +1,14 @@
 import 'package:flutter/cupertino.dart';
 
 import '../../../../../core/utils/styles.dart';
+import '../../../data/models/book_model/book_model.dart';
 import 'book_rating.dart';
 import 'books_action.dart';
 import 'custom_book_image_view.dart';
 
 class BooksDetailsSection extends StatelessWidget {
-  const BooksDetailsSection({super.key});
-
+  const BooksDetailsSection({super.key, required this.bookModel});
+  final BookModel bookModel;
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
@@ -16,24 +17,26 @@ class BooksDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .2),
-          child: const CustomBookImage(
-            imageUrl: "https://upload.wikimedia.org/wikipedia/en/f/fb/Le_Livre_d%27image.png",
+          child:  CustomBookImage(
+            imageUrl:
+              bookModel.volumeInfo.imageLinks?.thumbnail??"" ,
           ),
         ),
         const SizedBox(
           height: 43,
         ),
-        const Text(
-          'The Jungle Book',
+         Text(
+         bookModel.volumeInfo.title! ,
           style: Styles.textStyle30,
+          textAlign: TextAlign.center,
         ),
         const SizedBox(
           height: 6,
         ),
-        const Opacity(
+         Opacity(
           opacity: .7,
           child: Text(
-            'Rudyard Kipling',
+           bookModel.volumeInfo.authors?[0]??"",
             style: Styles.textStyle14,
           ),
         ),
@@ -44,7 +47,9 @@ class BooksDetailsSection extends StatelessWidget {
         const SizedBox(
           height: 37,
         ),
-        const BooksAction(),
+         BooksAction(
+          bookModel: bookModel,
+         ),
       ],
     );
   }

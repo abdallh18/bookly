@@ -2,7 +2,9 @@ import 'package:appnoteadjkasd/Features/home/presentaion/maneger/feature/feature
 import 'package:appnoteadjkasd/core/widgets/custom_error_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../../../core/utils/app_routers.dart';
 import '../../../../../core/widgets/custom_loading_indicator.dart';
 import 'custom_book_image_view.dart';
 
@@ -25,9 +27,15 @@ class FeaturedBookListView extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(
                     horizontal: 8,
                   ),
-                  child: CustomBookImage(
-                    imageUrl:
-                        state.books[index].volumeInfo.imageLinks?.thumbnail??'',
+                  child: GestureDetector(
+                    onTap: () {
+                          GoRouter.of(context).push(AppRouter.KBookDetailsView,extra: state.books[index]);
+                    },
+                    child: CustomBookImage(
+                      imageUrl:
+                          state.books[index].volumeInfo.imageLinks?.thumbnail ??
+                              '',
+                    ),
                   ),
                 );
               },
