@@ -1,6 +1,7 @@
 
 import 'package:url_launcher/url_launcher.dart';
-import 'coustom_snal_bar.dart';
+
+import 'custom_snak_bar.dart';
 Future<void> launchCustomUr(context, String? url) async {
   if (url != null) {
     final Uri uri = Uri.parse(url);
